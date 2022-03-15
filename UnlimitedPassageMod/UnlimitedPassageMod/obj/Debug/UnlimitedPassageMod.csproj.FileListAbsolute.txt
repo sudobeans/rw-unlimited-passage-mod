@@ -1,0 +1,11 @@
+C:\Users\Me\Documents\rw-unlimited-passage-mod\UnlimitedPassageMod\UnlimitedPassageMod\bin\Debug\UnlimitedPassageMod.dll
+C:\Users\Me\Documents\rw-unlimited-passage-mod\UnlimitedPassageMod\UnlimitedPassageMod\bin\Debug\UnlimitedPassageMod.pdb
+C:\Users\Me\Documents\rw-unlimited-passage-mod\UnlimitedPassageMod\UnlimitedPassageMod\bin\Debug\Assembly-CSharp.dll
+C:\Users\Me\Documents\rw-unlimited-passage-mod\UnlimitedPassageMod\UnlimitedPassageMod\bin\Debug\BepInEx.dll
+C:\Users\Me\Documents\rw-unlimited-passage-mod\UnlimitedPassageMod\UnlimitedPassageMod\bin\Debug\HOOKS-Assembly-CSharp.dll
+C:\Users\Me\Documents\rw-unlimited-passage-mod\UnlimitedPassageMod\UnlimitedPassageMod\bin\Debug\UnityEngine.dll
+C:\Users\Me\Documents\rw-unlimited-passage-mod\UnlimitedPassageMod\UnlimitedPassageMod\obj\Debug\UnlimitedPassageMod.csproj.AssemblyReference.cache
+C:\Users\Me\Documents\rw-unlimited-passage-mod\UnlimitedPassageMod\UnlimitedPassageMod\obj\Debug\UnlimitedPassageMod.csproj.CoreCompileInputs.cache
+C:\Users\Me\Documents\rw-unlimited-passage-mod\UnlimitedPassageMod\UnlimitedPassageMod\obj\Debug\UnlimitedPassageMod.csproj.CopyComplete
+C:\Users\Me\Documents\rw-unlimited-passage-mod\UnlimitedPassageMod\UnlimitedPassageMod\obj\Debug\UnlimitedPassageMod.dll
+C:\Users\Me\Documents\rw-unlimited-passage-mod\UnlimitedPassageMod\UnlimitedPassageMod\obj\Debug\UnlimitedPassageMod.pdb
