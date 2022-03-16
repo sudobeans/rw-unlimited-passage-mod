@@ -5,7 +5,7 @@ A mod for Rain World that allows the game's fast-travel feature (passage) to be 
 This mod requires Rain World BepInEx to be installed. You can watch the video on how to install it here:
 https://www.youtube.com/watch?v=brDN_8uN6-U
 
-To install this mod, go to the Releases page:
+To install this mod, go to the Releases page, and download the file called `RW-unlimited-passage.zip`.
 Extract the zip, and move `UnlimitedPassageMod.dll` into your `Rain World/BepInEx/plugins` folder.
 If you are using BOI, you can also move it to your `Rain World/Mods` folder.
 
