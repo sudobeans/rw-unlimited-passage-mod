@@ -1,4 +1,6 @@
-# rw-unlimited-passage-mod
+# Rain World Unlimited Passage Mod
+By AHDog
+For Rain World 1.5
 A mod for Rain World that allows the game's fast-travel feature (passage) to be used an unlimited number of times.
 
 ## Installation
