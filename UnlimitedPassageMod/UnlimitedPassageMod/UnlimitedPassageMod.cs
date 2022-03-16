@@ -1,41 +1,48 @@
-﻿using System;
+﻿// Unlimited Passage Mod for Rain World
+// By AHDog
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using BepInEx;
+using UnityEngine;
 
 namespace UnlimitedPassages
 {
     [BepInPlugin("ahdog.unlimited_passages", "UnlimitedPassageMod", "0.1.0")]	// (GUID, mod name, mod version)
     public class UnlimitedPassageMod : BaseUnityPlugin
     {
+        // This is called when the mod is loaded.
         public void OnEnable()
         {
-            /* This is called when the mod is loaded. */
-
-            // subscribe ConsumeEndgameHook to the WinState.ConsumeEndGame method from the game
-            On.WinState.ConsumeEndGame += ConsumeEndgameHook;
+            // subscribe InitSleepHudHook so it runs whenever the sleep and death screen comes up
+            On.HUD.HUD.InitSleepHud += InitSleepHudHook;
         }
 
-        // This method will be subscribed to WinState.ConsumeEndgame. 
-        // It just gives the user all of their passages back after consuming one.
-        void ConsumeEndgameHook(On.WinState.orig_ConsumeEndGame orig, WinState self)
+        // This method will be subscribed to HUD.InitSleepHud().
+        // It gives the player all of their unlocked passages back.
+        public void InitSleepHudHook(
+            On.HUD.HUD.orig_InitSleepHud orig, 
+            HUD.HUD self, 
+            Menu.SleepAndDeathScreen sleepAndDeathScreen, 
+            HUD.Map.MapData mapData, 
+            SlugcatStats charStats)
         {
-            // Run WinState.ConsumeEndGame()
-            orig(self);
-
-            // Give the user all their passages back
-
-            // For every endgameTracker (passage):
-            for (int i = 0; i < self.endgameTrackers.Count; i++)
+            // Give the user all their passages back.
+            // (This code is based off the WinState.ConsumeEndGame() method.)
+            WinState winState = sleepAndDeathScreen.winState;
+            for (int i = 0; i < winState.endgameTrackers.Count; i++) // For every endgameTracker (passage):
             {   
-                // If the user has fullfilled the goal needed to unlock the passage:
-                if (self.endgameTrackers[i].GoalFullfilled)
+                if (winState.endgameTrackers[i].GoalFullfilled)      // If the user has got the right achievement:
                 {
-                    // Give their passage to them
-                    self.endgameTrackers[i].consumed = false;
+                   winState.endgameTrackers[i].consumed = false;    // Give their passage to them
                 }
             }
+            Debug.Log("Gave user all their passages back");
+
+            // Run SleepAndDeathScreen.GetDataFromGame()
+            orig(self, sleepAndDeathScreen, mapData, charStats);
         }
     }
 }
