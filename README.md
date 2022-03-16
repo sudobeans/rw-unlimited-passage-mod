@@ -6,6 +6,8 @@ For Rain World 1.5
 
 A mod for Rain World that allows the game's fast-travel feature (passage) to be used an unlimited number of times.
 
+NOTE: this mod only works if you've already unlocked the ability to use passages!
+
 ## Installation
 
 This mod requires Rain World BepInEx to be installed. 
