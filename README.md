@@ -1,9 +1,13 @@
 # Rain World Unlimited Passage Mod
+
 By AHDog
+
 For Rain World 1.5
+
 A mod for Rain World that allows the game's fast-travel feature (passage) to be used an unlimited number of times.
 
 ## Installation
+
 This mod requires Rain World BepInEx to be installed. 
 You can watch the video on how to install it here:
 https://www.youtube.com/watch?v=brDN_8uN6-U
@@ -16,4 +20,5 @@ Extract the zip, and move `UnlimitedPassageMod.dll` into your `Rain World/BepInE
 If you are using BOI, you can also move it to your `Rain World/Mods` folder.
 
 ## Bugs
+
 - Removing the mod also seems to remove the user's passages
